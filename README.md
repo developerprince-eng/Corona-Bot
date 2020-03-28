@@ -22,13 +22,13 @@ python3 -m venv dev
 2. Activate Virtual Environment
 
 ```bash
-source dev\Scripts\activate
+dev\Scripts\activate
 ```
 
 or 
 
 ```bash
-dev\bin\activate 
+source dev\bin\activate 
 ```
 
 3. Install  packages
@@ -36,5 +36,28 @@ dev\bin\activate
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Set up environment and run
+
+```bash 
+set FLASK_ENV=development && set FLASK_APP=bot.py
+flask run
+```
+or
+
+```bash
+export FLASK_ENV=development && export FLASK_APP=bot.py
+flask run
+```
+
+5. Globally Port using ngrok
+
+```bash
+ngrok http 500
+```
+
+Then use the http or https which are created by ngrok for globally accessing your local host application and connect to channel of your choice in Twilio Console. 
+
+Enjoy. 
 
 Project is Developed by **DeveloperPrince**.
