@@ -12,7 +12,7 @@ def bot():
     msg = resp.message()
     responded = False
     if 'corona' in incoming_msg or 'welcome' in incoming_msg:
-        msg.body('Welcome to BPRA , Empowering residents and promoting social accountability and good local governance! Uhlelo LweZakhamizi! ')       
+        msg.body('Welcome to BPRA , Empowering residents and promoting social accountability and good local governance! Uhlelo LweZakhamizi!\n Press 1 for main menu 5 to get help and 7 for water status. ')       
         responded = True
     if '1' in incoming_msg:
         msg.body('2. What is COVID-19/ CORONA VIRUS \n3. Symptoms \n4. Preventative Measures \n5. How to Get Help \n6. Corona Staticstics in Bulawayo\n7. Water Status')
@@ -27,13 +27,13 @@ def bot():
         msg.body('Perform the Following as Preventative measures: \n 1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.')
         responded = True
     if '5' in incoming_msg:
-        msg.body('1. Call *2019* for assistance \n2. Send please call to 077xxxxxxx for assistance.')
+        msg.body('1. Call *2019* for assistance \n2. Send please call to *077xxxxxxx* for assistance in Bulawayo.')
         responded = True
     if '6' in incoming_msg:
         msg.body('*Fatalities*: *1* \n*Cases*: *6* \n*Confirmed*: 4\n')
         responded = True
     if '7' in incoming_msg: 
-        msg.body('1. If there is *No* *Water*, Send please call to 077xxxxxxx for assistance.\n2. If Water Pressure is *Low*, Send please call to 077xxxxxxx for assistance. ')
+        msg.body('1. Pipe Burst *No* *Water*, Send please call to *077xxxxxxx* for assistance.\n2. Send Complaints *077xxxxxxx*.\n3. Refuse not Collected, Send please call to *077xxxxxxx* for assistance.\n4. Ward report, Send please call to *077xxxxxxx* for assistance. ')
         responded = True
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.body('This bot was made by *DeveloperPrince*')
