@@ -12,7 +12,7 @@ def bot():
     msg = resp.message()
     responded = False
     if 'corona' in incoming_msg or 'welcome' in incoming_msg:
-        msg.body('Welcome to BPRA , Empowering residents and promoting social accountability and good local governance! Uhlelo LweZakhamizi!\n Press 1 for main menu 5 to get help and 7 for water status. ')       
+        msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance! Uhlelo LweZakhamizi!This platform has been created to monitor service delivery in Bulawayo amid the Corona Virus/ COVID19 pandemic. Please kindly answer the questionnaire  below daily so that we are able to track service delivery in your ward.Press 1 for main menu 5 to get help and 7 for water status.\n Press 1 for main menu 5 to get help and 7 for water status.')       
         responded = True
     if '1' in incoming_msg:
         msg.body('2. What is COVID-19/ CORONA VIRUS \n3. Symptoms \n4. Preventative Measures \n5. How to Get Help \n6. Corona Staticstics in Bulawayo\n7. Water Status')
