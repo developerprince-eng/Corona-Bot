@@ -33,10 +33,11 @@ def bot():
         msg.body('*Fatalities*: *1* \n*Cases*: *6* \n*Confirmed*: 4\n')
         responded = True
     if '7' in incoming_msg: 
-        msg.body('1. Pipe Burst *No* *Water*, Send please call to *077xxxxxxx* for assistance.\n2. Send Complaints *077xxxxxxx*.\n3. Refuse not Collected, Send please call to *077xxxxxxx* for assistance.\n4. Ward report, Send please call to *077xxxxxxx* for assistance. ')
+        msg.body('1. *Pipe Burst*, Send please call to *077xxxxxxx* for assistance.\n2. *Send* *Complaints* to *077xxxxxxx*.\n3. *Refuse* *not* *Collected*, Send please call to *077xxxxxxx* for assistance.\n4. *Ward* *report*, Send please call to *077xxxxxxx* for assistance. ')
         responded = True
     if 'made' in incoming_msg or 'developed' in incoming_msg :
-        msg.body('This bot was made by *DeveloperPrince*')
+        msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
+        msg.body('This bot was made by *DeveloperPrince* :) ')
         responded = True
     if not responded:
         resp = 'Please press for 1 for Menu'
