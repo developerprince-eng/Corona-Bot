@@ -34,6 +34,7 @@ def bot():
         responded = True
     if '7' in incoming_msg: 
         msg.body('1. If there is *No* *Water*, Send please call to 077xxxxxxx for assistance.\n2. If Water Pressure is *Low*, Send please call to 077xxxxxxx for assistance. ')
+        responded = True
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.body('This bot was made by *DeveloperPrince*')
         responded = True
