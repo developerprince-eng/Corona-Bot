@@ -16,7 +16,7 @@ def bot():
         responded = True
 
     if 'menu' in incoming_msg:
-        msg.body('*Menu*: \n\n*1*. *Services*\n*2*. *Symptoms*\n*3*. *Prevent Measures*\n*4*. *Help*\n*5*. *Stats*\n\n')
+        msg.body('*Menu*: \n\n*Lockdown*\n*Symptoms*\n*Prevention*\n*Help*\n*Stats*\n\n')
         responded = True
 
     if  'services' in incoming_msg:
@@ -219,7 +219,7 @@ def bot():
         responded = True   
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
-        msg.body('This bot was made by *DeveloperPrince*')
+        msg.body('This bot was made by *DeveloperPrince* \U+1F913')
         responded = True
     if not responded:
         resp = 'Please press for *Menu* for Menu '
