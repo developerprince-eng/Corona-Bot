@@ -12,7 +12,7 @@ def bot():
     msg = resp.message()
     responded = False
     if 'corona' in incoming_msg or 'welcome' in incoming_msg:
-        msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\n\nSend \n*Services* for Service updates.\n*About*  COVID-19 / Corona virus\n*Help* for Bulawayo Service number\n\n')       
+        msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\n\nSend \n*Services* for Service updates.\n*About*  COVID-19 / Corona virus\n*Help* for Bulawayo Service number\n\n*Menu* for full Menu option.')       
         responded = True
 
     if 'menu' in incoming_msg:
