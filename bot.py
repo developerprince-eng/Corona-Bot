@@ -11,7 +11,7 @@ def bot():
     resp = MessagingResponse()
     msg = resp.message()
     responded = False
-    if 'corona' in incoming_msg or 'welcome' in incoming_msg:
+    if 'bulawayo' in incoming_msg or 'welcome' in incoming_msg:
         msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\n\nSend \n*Services* for Service updates.\n*About*  COVID-19 / Corona virus\n*Help* for Bulawayo Service number\n\n*Menu* for full Menu option.')       
         responded = True
 
@@ -65,6 +65,156 @@ def bot():
         msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
         responded = True
     if 'ward 4 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 5 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 5 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 6 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 6 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 7 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 7 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 8 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 8 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True 
+    if 'ward 9 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 9 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 10 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 10 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 11 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 11 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 12 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 12 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 13 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 13 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 14 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 14 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 15 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 15 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 16 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 16 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True  
+    if 'ward 17 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 17 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 18 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 18 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 19 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 19 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 20 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 20 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True 
+    if 'ward 21 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 21 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 21 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 21 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 22 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 22 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 23 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 23 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True  
+    if 'ward 24 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 24 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 25 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 25 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 26 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 27 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 28 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 28 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True  
+    if 'ward 29 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 29 refuse' in incoming_msg:
         msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
         responded = True   
     if 'made' in incoming_msg or 'developed' in incoming_msg :
