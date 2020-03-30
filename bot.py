@@ -26,7 +26,7 @@ def bot():
     if 'symptoms' in incoming_msg or '2' in incoming_msg: 
         msg.body('\n\n*Coronavirus* *symptoms* *include*:\n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
         responded = True
-    if 'prevent measures' in incoming_msg or 'measures in incoming': 
+    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg: 
         msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.')
         responded = True
     if 'help' in incoming_msg or '4' in incoming_msg:
