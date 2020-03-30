@@ -17,7 +17,7 @@ def bot():
     if 'menu' in incoming_msg:
         msg.body('*Menu*: \n\n*1*. *Services*\n*2*. *Symptoms*\n*3*. *Prevent Measures*\n*4*. *Help*\n*5*. *Stats*\n\n')
         responded = True
-    if  'services' in incoming_msg '1' in incoming_msg:
+    if  'services' in incoming_msg or '1' in incoming_msg:
         msg.body('*For* *Service* *Assistance*\nPlease send *Ward* followed by your *ward* *number*\nFollowed by service not available *water*, *refuse* \n\ne.g. Ward 12 water')
         responded = True
     if 'about' in incoming_msg: 
