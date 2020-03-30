@@ -15,7 +15,7 @@ def bot():
         msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\nPress \n*1*.  Service updates.\n*2*.  COVID-19 / Corona virus\n*3*.Bulawayo Service number')       
         responded = True
     if 'menu' in incoming_msg:
-        msg.body('*Menu*: \n\n*1*. *Services*\n*2*. *2*. *Symptoms*\n*3*. *Prevent Measures*\n*4*. *Help*\n*5*. *Stats*\n')
+        msg.body('*Menu*: \n\n*1*. *Services*\n*2*. *Symptoms*\n*3*. *Prevent Measures*\n*4*. *Help*\n*5*. *Stats*\n')
         responded = True
     if '1' or 'services' in incoming_msg:
         msg.body('*For* *Service* *Assistance*\nPlease send *Ward* followed by your *ward* *number*\nFollowed by service not available *water*, *refuse* \n\ne.g. Ward 12 water')
@@ -70,5 +70,4 @@ def bot():
     if not responded:
         resp = 'Please press for *Menu* for Menu '
         msg.body(resp)
-        responded = True
     return str(resp)
