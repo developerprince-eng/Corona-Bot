@@ -11,7 +11,7 @@ def bot():
     resp = MessagingResponse()
     msg = resp.message()
     responded = False
-    if 'bulawayo' in incoming_msg or 'welcome' in incoming_msg:
+    if 'bulawayo' in incoming_msg or 'welcome' in incoming_msg or 'hi' in incoming_msg:
         msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\n\nSend \n*Services* for Service updates.\n*About*  COVID-19 / Corona virus\n*Help* for Bulawayo Service number\n\n*Menu* for full Menu option.')       
         responded = True
 
@@ -31,7 +31,7 @@ def bot():
         msg.body('\n\n*Coronavirus* *symptoms* *include*:\n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
         responded = True
 
-    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'preventation': 
+    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'preventation' in incoming_msg: 
         msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.\n\n*To* *curb* *the* *spread* *of* *COVID-19.* *Zimbabwe* *will* *go* *on* *Lock-down* *for* *21* *days,* *starting* *on* *Monday* *the* *30th* *of* *March* *2020*')
         responded = True
 
