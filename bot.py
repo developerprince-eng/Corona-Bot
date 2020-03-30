@@ -16,10 +16,10 @@ def bot():
         responded = True
 
     if 'menu' in incoming_msg:
-        msg.body('*Menu*: \n\n*Lockdown \U0001F512*\n*Symptoms \U0001F637*\n*Prevention* \U0001F3E5 \n*Help* \U0001F6C2\n*Stats* \U0001F4F0	\n\n')
+        msg.body('*Menu*: \n\n*Symptoms \U0001F637*\n*Prevention* \U0001F3E5 \n*Help* \U0001F6C2\n*Stats* \U0001F4F0	\n\n')
         responded = True
 
-    if  'services' in incoming_msg or 'lockdown' in incoming_msg:
+    if  'services' in incoming_msg:
         msg.body('\n\n*For* *Service* *Assistance*\nPlease send *Ward* followed by your *ward* *number*\nFollowed by service not available *water*, *refuse* \n\ne.g. Ward 12 water')
         responded = True
 
@@ -31,8 +31,8 @@ def bot():
         msg.body('\n\n*Coronavirus* *symptoms* *include*:\n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
         responded = True
 
-    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg: 
-        msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.')
+    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'preventation': 
+        msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.\n\nZimbabwe will go on Lock-down for 21 days, starting on Monday the *30th* *of* *March* *2020*.  To curb the spread of COVID-19.')
         responded = True
 
     if 'help' in incoming_msg:
