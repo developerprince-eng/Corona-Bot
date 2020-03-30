@@ -40,7 +40,8 @@ def bot():
         responded = True
 
     if 'fatalities' in incoming_msg or 'stats' in incoming_msg:
-        msg.body('*Fatalities*: *1* \n*Cases*: *6* \n*Confirmed*: 4\n')
+        msg.media('https://oncocare.co.zw/wp-content/uploads/2014/05/MHC.jpg')
+        msg.body('*Fatalities*: *1* \n*Cases*: *194* \n*Confirmed*: *7*\n*Negative*: *187*\n')
         responded = True
 
     if 'ward 1 water' in incoming_msg:
@@ -219,7 +220,7 @@ def bot():
         responded = True   
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
-        msg.body('This bot was made by *DeveloperPrince* \U+1F913')
+        msg.body('This bot was made by *DeveloperPrince* U+1F913')
         responded = True
     if not responded:
         resp = 'Please press for *Menu* for Menu '
