@@ -31,7 +31,7 @@ def bot():
         msg.body('\n\n\U0001F637*Coronavirus* *symptoms* *include*:\n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
         responded = True
 
-    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'preventation' in incoming_msg: 
+    if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'prevention' in incoming_msg: 
         msg.body('\n\n\U0001F3E5 *Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.\n\n*To* *curb* *the* *spread* *of* *COVID-19.* *Zimbabwe* *will* *go* *on* *Lock-down* *for* *21* *days,* *starting* *on* *Monday* *the* *30th* *of* *March* *2020*')
         responded = True
 
@@ -223,7 +223,7 @@ def bot():
         msg.body('This bot was made by \U0001F913	*DeveloperPrince* \U0001F31F')
         responded = True
     if not responded:
-        msg.body('Please check you spelling or send for *Menu* for Menu ')
+        msg.body('Please check you spelling or send *Menu* for Menu ')
        
     return str(resp)
 
