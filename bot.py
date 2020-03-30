@@ -32,7 +32,7 @@ def bot():
         responded = True
 
     if 'prevent measures' in incoming_msg or 'measures' in incoming_msg or 'preventation': 
-        msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.\n\nZimbabwe will go on Lock-down for 21 days, starting on Monday the *30th* *of* *March* *2020*.  To curb the spread of COVID-19.')
+        msg.body('\n\n*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.\n\n*To* *curb* *the* *spread* *of* *COVID-19.* *Zimbabwe* *will* *go* *on* *Lock-down* *for* *21* *days,* *starting* *on* *Monday* *the* *30th* *of* *March* *2020*')
         responded = True
 
     if 'help' in incoming_msg:
