@@ -16,7 +16,7 @@ def bot():
         responded = True
 
     if 'menu' in incoming_msg:
-        msg.body('*Menu*: \n\n*Lockdown*\n*Symptoms*\n*Prevention*\n*Help*\n*Stats*\n\n')
+        msg.body('*Menu*: \n\n*Lockdown \U0001F512*\n*Symptoms \U0001F637*\n*Prevention* \U0001F3E5 \n*Help* \U0001F6C2\n*Stats* \U0001F4F0	\n\n')
         responded = True
 
     if  'services' in incoming_msg:
@@ -24,7 +24,7 @@ def bot():
         responded = True
 
     if 'about' in incoming_msg: 
-        msg.body('\n\nCOVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new Virus and disease were unknown before the outbreak began in Wuhan, China in December 2019 (WHO 2020)')
+        msg.body('\n\n*What* *is* *COVID-19?*\n\nCoronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).\n\n*The* *most* *recently* *discovered* *coronavirus* *causes* *coronavirus* *disease* *COVID-19.*\n\n*What* *is* *COVID-19?*\n\nCOVID-19 is the infectious disease caused by the most recently discovered coronavirus.The first case of the virus has been identified in Wuhan, Hubei Province, China.United Nations, Public health officials and partners are working hard to identify the source of the virus.')
         responded = True
 
     if 'symptoms' in incoming_msg: 
@@ -220,9 +220,10 @@ def bot():
         responded = True   
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
-        msg.body('This bot was made by *DeveloperPrince* \U0001F31F')
+        msg.body('This bot was made by \U0001F913	*DeveloperPrince* \U0001F31F')
         responded = True
     if not responded:
         resp = 'Please press for *Menu* for Menu '
         msg.body(resp)
     return str(resp)
+
