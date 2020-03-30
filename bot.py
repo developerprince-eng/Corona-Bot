@@ -19,7 +19,7 @@ def bot():
         msg.body('*Menu*: \n\n*Lockdown \U0001F512*\n*Symptoms \U0001F637*\n*Prevention* \U0001F3E5 \n*Help* \U0001F6C2\n*Stats* \U0001F4F0	\n\n')
         responded = True
 
-    if  'services' in incoming_msg:
+    if  'services' in incoming_msg or 'lockdown' in incoming_msg:
         msg.body('\n\n*For* *Service* *Assistance*\nPlease send *Ward* followed by your *ward* *number*\nFollowed by service not available *water*, *refuse* \n\ne.g. Ward 12 water')
         responded = True
 
