@@ -12,34 +12,63 @@ def bot():
     msg = resp.message()
     responded = False
     if 'corona' in incoming_msg or 'welcome' in incoming_msg:
-        msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance! Uhlelo LweZakhamizi!This platform has been created to monitor service delivery in Bulawayo amid the Corona Virus/ COVID19 pandemic. Please kindly answer the questionnaire  below daily so that we are able to track service delivery in your ward.Press 1 for main menu 5 to get help and 7 for water status.\n Press 1 for main menu 5 to get help and 7 for water status.')       
+        msg.body('*Welcome* *to* *BPRA* , Empowering residents and promoting social accountability and good local governance!  Corona Virus/ COVID19 pandemic is upon us keep social distance and good hygiene practices . Please help us monitor service delivery in your ward by sending updates .\nPress \n*1*.  Service updates.\n*2*.  COVID-19 / Corona virus\n*3*.Bulawayo Service number')       
         responded = True
-    if '1' in incoming_msg:
-        msg.body('2. What is COVID-19/ CORONA VIRUS \n3. Symptoms \n4. Preventative Measures \n5. How to Get Help \n6. Corona Staticstics in Bulawayo\n7. Water Status')
+    if 'menu' in incoming_msg:
+        msg.body('*Menu*: \n\n*1*. *Services*\n*2*. *2*. *Symptoms*\n*3*. *Prevent Measures*\n*4*. *Help*\n*5*. *Stats*\n')
         responded = True
-    if '2' in incoming_msg:
+    if '1' or 'services' in incoming_msg:
+        msg.body('*For* *Service* *Assistance*\nPlease send *Ward* followed by your *ward* *number*\nFollowed by service not available *water*, *refuse* \n\ne.g. Ward 12 water')
+        responded = True
+    if 'about' in incoming_msg: 
+
         msg.body('COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new Virus and disease were unknown before the outbreak began in Wuhan, China in December 2019 (WHO 2020)')
         responded = True
-    if '3' in incoming_msg:
-        msg.body('Coronavirus symptoms include: \n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
+    if 'symptoms' in incoming_msg: 
+        msg.body('*Coronavirus* *symptoms* *include*:\n1. Respiratory Symptoms \n2. Fever \n3. Cough \n4. Shortness of breath \n5. Breathing Difficulties')
         responded = True
-    if '4' in incoming_msg:
-        msg.body('Perform the Following as Preventative measures: \n 1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.')
+    if 'prevent measures' in incoming_msg or 'measures in incoming': 
+        msg.body('*Perform* *the* *Following* *as* *Preventative* *measures*: \n\n1. Wash you hands under running water with soap for 20 seconds. \n2. Use Hand sanitizer regularly\n3. Practice Social Distancing keeping a distance of 2 meters apart.')
         responded = True
-    if '5' in incoming_msg:
-        msg.body('1. Call *2019* for assistance \n2. Send please call to *077xxxxxxx* for assistance in Bulawayo.')
+    if 'help' or '3' in incoming_msg:
+        msg.body('*For* *Assistance* *Please* *use* *the* *following* *Contacts*: \n\n1. *Police* - *0292* *995/* *72515* \n2. *Ambulance* - *0292* *68496* \n3. *Council* *faults* - *0292* *75011* ')
         responded = True
-    if '6' in incoming_msg:
+    if 'fatalities' in incoming_msg or 'stats':
         msg.body('*Fatalities*: *1* \n*Cases*: *6* \n*Confirmed*: 4\n')
         responded = True
-    if '7' in incoming_msg: 
-        msg.body('1. *Pipe Burst*, Send please call to *077xxxxxxx* for assistance.\n2. *Send* *Complaints* to *077xxxxxxx*.\n3. *Refuse* *not* *Collected*, Send please call to *077xxxxxxx* for assistance.\n4. *Ward* *report*, Send please call to *077xxxxxxx* for assistance. ')
+    if 'ward 1 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 1 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 2 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 2 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 3 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 3 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if 'ward 4 water' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True
+    if 'ward 4 refuse' in incoming_msg:
+        msg.body('Thank you complaint has been noted for Ward 1, Relevent authorities shall be notified')
+        responded = True   
+    if '5' in incoming_msg:
+        msg.body('1. Call *2019* for assistance \n2. Send please call to *077xxxxxxx* for assistance in Bulawayo.')
         responded = True
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
         msg.body('This bot was made by *DeveloperPrince*')
         responded = True
     if not responded:
-        resp = 'Please press for 1 for Menu'
+        resp = 'Please press for *Menu* for Menu '
         msg.body(resp)
+        responded = True
     return str(resp)
