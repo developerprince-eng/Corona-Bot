@@ -220,7 +220,7 @@ def bot():
         responded = True   
     if 'made' in incoming_msg or 'developed' in incoming_msg :
         msg.media("https://developerprince.herokuapp.com/static/assets/images/logo.png")
-        msg.body('This bot was made by *DeveloperPrince* U+1F913')
+        msg.body('This bot was made by *DeveloperPrince* \U0001F31F')
         responded = True
     if not responded:
         resp = 'Please press for *Menu* for Menu '
